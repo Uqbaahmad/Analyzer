@@ -10,13 +10,13 @@ from github import Github
 
 # from setup import calculate_complexity_with_gpt
 import os
-from secret_key.api_key import OPENAI_SECRET_KEY
+# from secret_key.api_key import OPENAI_SECRET_KEY
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
 # Set the OpenAI API key in the environment variable.
-os.environ["OPENAI_API_KEY"] = OPENAI_SECRET_KEY
+os.environ["OPENAI_API_KEY"] = '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'
 
 def calculate_complexity_with_gpt(code):
     prompt = PromptTemplate(
