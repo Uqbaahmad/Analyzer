@@ -94,7 +94,7 @@ def calculate_complexity(code, filepath=None):
 def fetch_github_repositories(github_url):
     # Initialize variables to store the most complex repository
     most_complex_repo = None
-    most_complex_score = 0
+    most_complex_score = -1
 
     try:
         # Parse the username from the GitHub URL
